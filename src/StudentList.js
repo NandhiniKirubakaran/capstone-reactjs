@@ -1,5 +1,6 @@
 import { TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { API } from './global';
 
 
 export function StudentList() {
@@ -7,7 +8,9 @@ export function StudentList() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/students")
+    fetch(`${API}`,{
+      method: "GET",
+    })
       .then((data) => data.json())
       .then((stu) => setStudents(stu));
   }, []);
