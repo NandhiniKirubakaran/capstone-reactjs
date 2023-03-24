@@ -3,12 +3,13 @@ import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { useState } from 'react';
+import { API } from './global';
 
 
 export function Home() {
   return (
     <div className='heading'>
-      <h1>ZEN CLASS STUDENT DASHBOARD</h1>
+      <h1>ADMIN DASHBOARD</h1>
       <LoginForm />
     </div>
   );
@@ -25,7 +26,7 @@ function LoginForm() {
     onSubmit: async (values) => {
       console.log(values);
 
-    const data = await fetch ("http://localhost:4000/students/login",{
+    const data = await fetch (`${API}`,{
         method: "POST",
         headers: {
           "content-type": "application/json",

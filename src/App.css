@@ -1,6 +1,11 @@
-/* .App {
-background-color: rgb(180, 177, 175);
-} */
+body{
+  background-color: rgb(221, 193, 193);
+  object-fit: cover;
+}
+.App {
+font-family: "Comic Sans MS",sans-serif;
+}
+
 .login-form{
   display: flex;
   flex-direction: column;

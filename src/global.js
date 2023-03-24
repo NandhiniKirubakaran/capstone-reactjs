@@ -1,1 +1,1 @@
-export const API='https://capstone-nodejs.vercel.app';
+export const API='https://capstone-nodejs-kf166nimk-nandhinikirubakaran.vercel.app';

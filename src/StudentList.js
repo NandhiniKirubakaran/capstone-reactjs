@@ -26,16 +26,7 @@ export function StudentList() {
 
 
 function StudentDetails({ detail }) {
-  // const detail = {
-  //   "name": "Nandhini Kirubakaran",
-  //   "role-no": "001",
-  //   "batch": "B40WD",
-  //   "language": "Tamil",
-  //   "passed-out": "2016",
-  //   "contact-no": "8825445655",
-  //   "mail-id": "knaphasri@gmail.com",
-  //   "district": "Trichy"
-  //   };
+
   return (
     <div>
       <table className='table'>
