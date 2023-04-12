@@ -22,11 +22,12 @@ function LoginForm() {
   const navigate = useNavigate();
 
   const {handleChange, values, handleSubmit } = useFormik({
-    initialValues: {username: "Admin", password: "Admin@1234"},
+    initialValues: {username: "arun", password: "arun@123"},
     onSubmit: async (values) => {
       console.log(values);
 
     const data = await fetch (`${API}`,{
+        mode: "no-cors",
         method: "POST",
         headers: {
           "content-type": "application/json",
