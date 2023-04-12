@@ -1,6 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
+import { API } from "./global";
 
 
 
@@ -9,11 +10,11 @@ export function Signup() {
 const navigate = useNavigate();
 
 const {handleChange, handleSubmit} = useFormik({
-      initialValues: {username: " ", password: " "},
+      initialValues: {username: "Admin", password: "admin@12345"},
       onSubmit: async (values) => {
         console.log(values);
 
-      const data = await fetch("http://localhost:4000/students/signup",{
+      const data = await fetch(`${API}/students/signup`,{
       method: "POST",
       headers: {
         "content-type": "application/json",
