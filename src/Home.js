@@ -22,7 +22,7 @@ function LoginForm() {
   const navigate = useNavigate();
 
   const {handleChange, values, handleSubmit } = useFormik({
-    initialValues: {username: "", password: ""},
+    initialValues: {username: "Admin", password: "Admin@1234"},
     onSubmit: async (values) => {
       console.log(values);
 

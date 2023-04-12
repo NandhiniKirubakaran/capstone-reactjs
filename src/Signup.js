@@ -10,7 +10,7 @@ export function Signup() {
 const navigate = useNavigate();
 
 const {handleChange, handleSubmit} = useFormik({
-      initialValues: {username: "Admin", password: "admin@12345"},
+      initialValues: {username: "", password: ""},
       onSubmit: async (values) => {
         console.log(values);
 
