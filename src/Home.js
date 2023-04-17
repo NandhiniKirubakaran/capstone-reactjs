@@ -40,7 +40,7 @@ function LoginForm() {
           console.log("❌ Error");
           setFormState("error");
         } else {
-          const result = data.json();
+          const result = await data.json();
           console.log("✅ Success", result);
           navigate("/class-details");
         }
