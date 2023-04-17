@@ -1,11 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 import { sidebardata } from './sidebardata';
-import LogoutIcon from '@mui/icons-material/Logout';
+
 
 
 
 export function Navbar() {
-  const navigate = useNavigate();
+  
   return (
     <div>
       <div className='sidebar-data'>
@@ -21,10 +21,10 @@ export function Navbar() {
             </ul>
           );
         })}
-        <button className='logout-button'
+        {/*<Button className='logout-button'
           type="submit"
           onClick={() => navigate('/')}
-        ><LogoutIcon />Logout</button>
+        ><LogoutIcon/>Logout</Button> */}
       </div>
     </div>
   );

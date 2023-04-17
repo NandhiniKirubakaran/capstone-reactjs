@@ -99,13 +99,11 @@ span{
  padding-left: 100px;
 }
 .logout-button{
-  margin-top: 200px;
- border: none;
- padding: 10px;
-background-color: aliceblue;
+border: none;
+padding: 10px;
 color: black;
 font-size: 18px;
-margin-left: -70px;
+border-radius: 50%;
 }
 .dashboard-box-container{
   height: 150px;
