@@ -2,11 +2,11 @@ import { HomeOutlined } from '@mui/icons-material';
 import PersonIcon from '@mui/icons-material/Person';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 import { styled } from '@mui/material/styles';
-import { Navbar } from "./Navbar";
-import { Header } from "./Header";
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import GroupsIcon from '@mui/icons-material/Groups';
 import { StackedChart } from './StackedChart';
+import { Navbar } from './Navbar';
+import { Header } from './Header';
 
 export function ClassDetails() {
   const datas = [{
@@ -33,7 +33,7 @@ export function ClassDetails() {
       <div className='classdetails-page'>
         {/* <DashboardIcon/> */}
         <Navbar />
-        <Header />
+      <Header />
       </div>
       <div className='dashboard'>
         {datas.map((result, index) => (

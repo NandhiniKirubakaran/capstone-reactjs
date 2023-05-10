@@ -1,5 +1,6 @@
-import { Header } from './Header';
-import { Navbar } from './Navbar';
+import { Header } from "./Header";
+import { Navbar } from "./Navbar";
+
 
 export function Tasks() {
   const tasks = [{
@@ -41,7 +42,7 @@ export function Tasks() {
           ];
   return (
     <div>
-      <Navbar />
+        <Navbar />
       <Header />
       <div className='task-page'>
       {tasks.map((data, index) => (

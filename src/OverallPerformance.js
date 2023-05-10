@@ -1,5 +1,9 @@
-import { Header } from './Header';
-import { Navbar } from './Navbar';
+
+import { Header } from "./Header";
+import { Navbar } from "./Navbar";
+import { App } from "./performanceChart";
+
+
 
 export function OverallPerformance() {
   return (
@@ -7,7 +11,8 @@ export function OverallPerformance() {
       <Navbar />
       <Header />
       <div className='overall-page'>
-      </div>
+      <App />
+    </div>
     </div>
   );
 }

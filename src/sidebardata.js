@@ -1,4 +1,4 @@
-import { HomeOutlined } from '@mui/icons-material';
+import GroupsIcon from '@mui/icons-material/Groups';
 import PersonIcon from '@mui/icons-material/Person';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import TaskIcon from '@mui/icons-material/Task';
@@ -17,6 +17,12 @@ export const sidebardata = [{
   title: 'Attendance',
   path: '/attendance/',
   icon: <LibraryBooksIcon />,
+  className: 'nav-text'
+},
+{
+  title: 'Students List',
+  path: '/student-list/',
+  icon: <GroupsIcon />,
   className: 'nav-text'
 },
 {

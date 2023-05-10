@@ -204,20 +204,48 @@ height: max-content;
   gap: 16px;
 }
 
+.heading-student-list{
+  font-weight: 600;
+  
+}
 
+.card-student-list{
+  height: 240px;
+  width: 270px;
 
+}
 
+.student-list{
+  margin-left: 750px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
 
+.para{
+  padding: 2px;
+  margin: 0;
+}
 
+.add-profile-button{
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(99, 108, 108);
+}
 
+.card-img-top{
+height: 200px;
+}
 
+.card{
+  width:1000px;
+}
 
-
-
-
-
-
-
+.download-button{
+  padding: 30px;
+}
 
 
 

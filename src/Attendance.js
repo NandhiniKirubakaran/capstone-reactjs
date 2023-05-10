@@ -5,7 +5,7 @@ import { PieChart } from './PieChart';
 export function Attendance() {
   return (
     <div>
-      <Navbar />
+       <Navbar />
       <Header />
       <div className='attendance-page'>
         <PieChart />

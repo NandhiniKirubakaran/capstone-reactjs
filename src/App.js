@@ -13,11 +13,12 @@ import { Projects } from './Projects';
 import { Attendance } from './Attendance';
 
 
+
 function App() {
 
   return (
     <div className="App">
-   
+      
    <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/class-details" element={<ClassDetails />} />
