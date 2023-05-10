@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from './Navbar';
 import { Header } from './Header';
+import { API } from "./global";
 
 
 
@@ -27,7 +28,7 @@ export function Profile() {
       year: year,
     }];
   // console.log(newUser);
-    fetch("http://localhost:4000/students",{ 
+    fetch(`${API}`,{ 
       method: 'POST',
       body: JSON.stringify(newUser),
       headers: {

@@ -6,6 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { Navbar } from './Navbar';
 import { Header } from './Header';
+import { API } from './global';
 
 
 export function StudentList() {
@@ -34,7 +35,7 @@ export function StudentList() {
   const [students, setStudents] = useState([]);
 
   const getUsers = () => {
-    fetch("http://localhost:4000/students", {
+    fetch(`${API}`, {
       method: "GET",
     })
     .then((data) => data.json())
